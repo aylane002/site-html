@@ -1,0 +1,6 @@
+.img-200-200 {
+  width: 200px; // a altura se adequa proporcionalmente
+}
+body {
+  background-color: rgb(235, 226, 231) !important;
+}

@@ -1,0 +1,213 @@
+/*Geral
+*/
+body {
+  font-family: família de fontes :Arial, Helvetica, sans-serif;
+  color: cornsilk;
+  background-color: rgb(173, 89, 135);}
+h1{
+  font-family: 'Dancing Script', cursive;
+  color: rgb(88, 51, 72);
+}
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+p{
+  font-family: 'Courgette', cursive;
+}
+
+/*Navegação
+*/
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(71, 35, 46)
+}
+nav > a {
+  text-decoration: none;
+  color: wheat
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+nav ul li {
+  width: 100px;
+  text-align: center;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100px;
+  text-decoration: none;
+  color: wheat
+}
+
+/*Cabeçalho*/
+header {
+  background-image: url(download1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(36, 9, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+header p {
+  margin-bottom: 2em;
+  color:black
+}
+/*Sobre*/
+#sobre {
+  color: rgb(7, 7, 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align-last: center;
+  padding: 0 20px 20px;
+  
+}
+#sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+}
+/*SErviços
+*/
+#diversos {
+  color: rgb(14, 15, 15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#diversos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*Portifolio*/
+#roupas {
+  color: rgb(12, 12, 11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-image: url(fundoServiço.jpg)
+ 
+}
+#roupas h2 {
+  margin-bottom: 20px;
+}
+#roupas img {
+  max-width: 50%;
+  width: 295px;
+  height: 295px;
+}
+/*Contato*/
+#contato {
+  color: rgb(46, 44, 38);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+/*formulario*/
+
+form label{
+  color: black;
+
+}
+/*Rodapé*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(46, 24, 25);
+  color: aliceblue;
+}
+/*media queries*/
+@media screen and (min-width: 768px) {
+  /*Navegação
+*/
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul {
+    flex-direction: row;
+    width: 50%;
+  }
+  /*Cabeçalho*/
+  header {
+    height: 200vh;
+    height: 200px;
+    justify-content: center;
+  }
+  /*Sobre*/
+  #sobre {
+    height: 30vh;
+    height: 30px;
+    justify-content: center;
+    min-height: 250px;
+  }
+  /*Diversos*/
+  #diversos {
+    flex-direction: row;/*direção linha*/
+    flex-wrap: wrap; /*quebra de linha*/
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #diversos h2 {
+    text-align: center;
+    width: 100%;
+  }
+  #diversos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+  }
+
+  /*Portifolio*/
+  #roupas {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #roupas h2 {
+    width: 100%;
+    text-align: center;
+  }
+  #roupas img {
+    width: 33.3333333333;
+  }
+  /*contato*/
+  #contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #contato h2,
+  #contato p {
+    width: 100%;
+  }
+}
